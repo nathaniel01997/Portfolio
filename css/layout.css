@@ -24,6 +24,119 @@
 
 body { background: #0f0f0f; }
 
+.tooltip {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 10px;
+   cursor: pointer;
+}
+
+.tooltip:hover .tooltipText{
+   opacity: 1;
+   transform: translateY(-10px);
+}
+
+.tooltipText {
+   background-color: #fff;
+   position: absolute;
+   left: -10px;
+   bottom: 130%;
+   border-radius: 5px;
+   font-size: 14px;
+   opacity: 0;
+   transition: all .3s;
+   width: 80px;
+}
+
+/* ------------------------------------------------------------------ */
+/* LinkedIN
+/* ------------------------------------------------------------------ */
+.tooltipLI{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 10px;
+   cursor: pointer;
+}
+
+.tooltipTextLI {
+   background-color: #fff;
+   position: absolute;
+   left: -25px;
+   bottom: 130%;
+   border-radius: 5px;
+   font-size: 14px;
+   opacity: 0;
+   transition: all .3s;
+   width: 80px;
+}
+
+.tooltipLI:hover .tooltipTextLI{
+   opacity: 1;
+   transform: translateY(-10px);
+}
+
+/* ------------------------------------------------------------------ */
+/* Facebook
+/* ------------------------------------------------------------------ */
+.tooltipFB{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 10px;
+   cursor: pointer;
+}
+
+.tooltipTextFB {
+   background-color: #fff;
+   position: absolute;
+   left: -30px;
+   bottom: 130%;
+   border-radius: 5px;
+   font-size: 14px;
+   opacity: 0;
+   transition: all .3s;
+   width: 80px;
+}
+
+.tooltipFB:hover .tooltipTextFB{
+   opacity: 1;
+   transform: translateY(-10px);
+}
+
+/* ------------------------------------------------------------------ */
+/* GitHub
+/* ------------------------------------------------------------------ */
+.tooltipGit{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 10px;
+   cursor: pointer;
+}
+
+.tooltipTextGit {
+   background-color: #fff;
+   position: absolute;
+   left: -25px;
+   bottom: 130%;
+   border-radius: 5px;
+   font-size: 14px;
+   opacity: 0;
+   transition: all .3s;
+   width: 80px;
+}
+
+.tooltipGit:hover .tooltipTextGit{
+   opacity: 1;
+   transform: translateY(-10px);
+}
+
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
@@ -95,8 +208,9 @@ header .social li {
    padding: 0;
 }
 header .social li a { color: #fff; }
+header .social .github-square a:hover { color: #000; }
 header .social .facebook a:hover { color: #4267B2; }
-header .social .linkedin a:hover { color: #0072b1 ; }
+header .social .linkedin a:hover { color: #000 ; }
 
 /* scrolldown link */
 header .scrolldown a {
